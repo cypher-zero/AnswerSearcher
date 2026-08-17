@@ -16,3 +16,7 @@ local.properties
 *.iml
 .DS_Store
 Thumbs.db
+
+# Signing keystore (NEVER commit — contains the private signing key)
+keystore/
+*.keystore

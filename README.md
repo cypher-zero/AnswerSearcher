@@ -96,6 +96,10 @@ gradle wrapper --gradle-version 8.2
 | 模糊搜索 | LCS + 字符集重叠评分排序 |
 | 异步 | Kotlin Coroutines |
 
+## 下载
+
+不想自己编译？直接到 **[Releases](https://github.com/cypher-zero/AnswerSearcher/releases)** 下载最新 APK（`AnswerSearcher-LV1.2-release.apk`），安装即可使用（Android 7.0+）。若设备上已装过其他签名的旧版，请先卸载再安装本版。
+
 ## 最低要求
 
 - Android 7.0（API 24）及以上
