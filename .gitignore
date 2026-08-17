@@ -1,0 +1,18 @@
+# Build artifacts
+app/build/
+build/
+.gradle/
+.gradle_bak_*/
+.gradle_bak_*/
+
+# Local config (may contain SDK paths / secrets)
+local.properties
+
+# Compiled binaries (not source)
+*.apk
+
+# IDE
+.idea/
+*.iml
+.DS_Store
+Thumbs.db

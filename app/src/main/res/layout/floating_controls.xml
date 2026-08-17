@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  悬浮窗 - 控制区域 (可交互)
+  包含: 拖拽手柄 + 截屏按钮 + 关闭按钮
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/bg_floating_controls"
+    android:padding="6dp">
+
+    <!-- 拖拽手柄 -->
+    <ImageView
+        android:id="@+id/ivDrag"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_drag"
+        android:background="@drawable/bg_btn_drag"
+        android:padding="8dp"
+        android:contentDescription="@string/drag_hint" />
+
+    <!-- 截屏按钮 -->
+    <ImageView
+        android:id="@+id/ivScreenshot"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_screenshot"
+        android:background="@drawable/bg_btn_screenshot"
+        android:padding="8dp"
+        android:layout_marginStart="6dp"
+        android:contentDescription="@string/screenshot" />
+
+    <!-- 关闭按钮 -->
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_close"
+        android:background="@drawable/bg_btn_close"
+        android:padding="8dp"
+        android:layout_marginStart="6dp"
+        android:contentDescription="@string/close" />
+
+</LinearLayout>

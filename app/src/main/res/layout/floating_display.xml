@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  悬浮窗 - 显示区域 (点击穿透)
+  只显示答案文本，不可交互，FLAG_NOT_TOUCHABLE
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_floating_display"
+    android:padding="12dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="300dp">
+
+        <TextView
+            android:id="@+id/tvAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="等待搜索..."
+            android:textColor="@color/floating_text"
+            android:textSize="15sp"
+            android:lineSpacingExtra="4dp" />
+
+    </ScrollView>
+
+</FrameLayout>

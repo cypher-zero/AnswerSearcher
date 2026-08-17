@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp">
+
+    <!-- 标题 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="题答搜索"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自选题库 · OCR识别 · 本地模糊匹配"
+        android:textSize="14sp"
+        android:textColor="#888888"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 题库状态卡片 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="2dp">
+
+        <TextView
+            android:id="@+id/tvQuestionBankStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question_bank_loading"
+            android:textSize="15sp"
+            android:textColor="#333333"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/local_only_note"
+            android:textSize="12sp"
+            android:textColor="#999999"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <!-- 选择题库按钮 -->
+    <Button
+        android:id="@+id/btnChooseBank"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="@string/choose_bank"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/btn_choose_bank_bg"
+        android:layout_marginBottom="12dp" />
+
+    <!-- 开启悬浮窗按钮 -->
+    <Button
+        android:id="@+id/btnStartFloating"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="@string/start_floating"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/btn_screenshot_bg" />
+
+</LinearLayout>
+</ScrollView>
